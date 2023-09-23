@@ -1,0 +1,122 @@
+<html>
+<head>
+	<title>website design using html and css</title>
+	<link rel="stylesheet"  href="style.css"/>
+</head>
+<body>
+	
+<div class="main">
+		<nav>
+			<div class="logo">
+				<img src="cat.png">
+			</div>
+			<div  class="nav-links">
+				<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Ticket</a></li>
+				<li><a href="#">Tour</a></li>
+				<li><a href="#">About</a></li>
+				</ul>
+			</div>
+		</nav>
+		
+		
+		<div class="information">
+			<div class="overlay"></div>
+			<img src="C.png" class="center">
+			<div id="circle">
+				<div class="feature one">
+					<img src="B.png">
+					<div>
+						<h1>Elephant</h1>
+						<p>Save my tusks</p>
+					</div>
+				</div>
+				
+				<div class="feature two">
+					<img src="M.png">
+					<div>
+						<h1>Rhino</h1>
+						<p>Save my horn</p>
+					</div>
+				</div>
+				
+				<div class="feature three">
+					<img src="N.png">
+					<div>
+						<h1>rain deer</h1>
+						<p>Live cool</p>
+					</div>
+				</div>
+				
+				<div class="feature four">
+					<img src="F.png">
+					<div>
+						<h1>Lion</h1>
+						<p>king of Jungle</p>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+				
+				<div class="controls">
+					<img src="up.png" id="upbtn">
+					<h3> Change</h3>
+					<img src="up.png" id="downbtn">
+				</div>
+				
+</div>
+		
+		
+	
+	<script>
+	var circle = document.getElementById("circle");
+	var upbtn = document.getElementById("upbtn");
+	var downbtn = document.getElementById("downbtn");
+	
+	var rotatevalue = circle.style.transform;
+	var rotateSum;
+	
+	
+	upbtn.onclick = function()
+	{
+		rotateSum = rotatevalue + "rotate(-90deg)";
+		circle.style.transform = rotateSum;
+		rotatevalue = rotateSum;
+	
+	}
+	
+	downbtn.onclick = function()
+	{
+		rotateSum = rotatevalue + "rotate(90deg)";
+		circle.style.transform = rotateSum;
+		rotatevalue = rotateSum;
+	}
+	</script>
+	
+	
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
